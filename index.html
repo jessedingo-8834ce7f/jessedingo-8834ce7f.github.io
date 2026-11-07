@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天堂电影下载 迅雷-高清资源磁力索引_热门电影BT下载站</title>
+  <meta name="description" content="天堂电影下载 迅雷资源索引站，提供2026年热门高清电影、经典影片的迅雷下载链接与磁力索引。每日更新最新电影资源，支持按类型、年份、评分筛选，方便快速找到想看的电影并一键下载。">
+  <meta name="keywords" content="天堂电影下载,迅雷下载,高清电影资源,磁力链接,BT下载站">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232b3b4f'/%3E%3Ccircle cx='50' cy='42' r='22' fill='%23ff8a3d'/%3E%3Cpath d='M40 68 L60 68 L50 86 Z' fill='%23ff8a3d'/%3E%3C/svg%3E">
+  <style>
+    /* 全局变量与重置 */
+    :root {
+      --bg: #f6f8fc;
+      --surface: #ffffff;
+      --surface-alt: #f0f3f9;
+      --text: #1a2634;
+      --text-secondary: #4f5e6e;
+      --text-muted: #7a8a9a;
+      --accent: #ff6b35;
+      --accent-soft: #fff0e8;
+      --accent-dark: #e55a2b;
+      --border: #e6ecf2;
+      --shadow-sm: 0 4px 12px rgba(0, 20, 40, 0.04);
+      --shadow-md: 0 10px 28px rgba(0, 20, 40, 0.08);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --radius-xs: 6px;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      --nav-height: 64px;
+      --max-width: 1200px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      list-style: none;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* 顶部导航 */
+    .nav-wrap {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.92);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--nav-height);
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--text);
+    }
+    .logo-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+    .logo-text {
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .logo-text span {
+      color: var(--accent);
+    }
+    .nav-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .nav-links a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-ghost {
+      padding: 8px 18px;
+      border-radius: 30px;
+      background: var(--surface-alt);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.2s;
+    }
+    .btn-ghost:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .btn-primary {
+      padding: 10px 22px;
+      border-radius: 30px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      box-shadow: 0 4px 10px rgba(255, 107, 53, 0.25);
+    }
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(255, 107, 53, 0.35);
+    }
+    /* 首屏banner */
+    .hero {
+      padding: 48px 0 32px;
+      background: linear-gradient(145deg, #ffffff 0%, #f0f4fa 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      width: fit-content;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      max-width: 780px;
+    }
+    .hero h1 span {
+      color: var(--accent);
+    }
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      line-height: 1.7;
+    }
+    .hero-search {
+      display: flex;
+      max-width: 620px;
+      background: var(--surface);
+      border-radius: 60px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .hero-search input {
+      flex: 1;
+      border: none;
+      padding: 16px 24px;
+      font-size: 1rem;
+      outline: none;
+      background: transparent;
+      font-family: var(--font);
+    }
+    .hero-search button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0 32px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .hero-search button:hover {
+      background: var(--accent-dark);
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .hero-tags a {
+      padding: 8px 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .hero-tags a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+    /* 通用section */
+    .section {
+      padding: 56px 0;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .section-title small {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 12px;
+      letter-spacing: 0;
+    }
+    .section-more {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .movie-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: all 0.25s;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+    }
+    .movie-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #d0dae6;
+    }
+    .card-poster {
+      height: 160px;
+      background: linear-gradient(135deg, #2b3b4f 0%, #3f566e 100%);
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 14px;
+      color: #fff;
+    }
+    .card-poster .badge {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+    .card-body {
+      padding: 18px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .card-tags span {
+      background: var(--surface-alt);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .card-desc {
+      font-size: 0.87rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      margin-top: 4px;
+    }
+    .card-meta .hot {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    /* 更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .update-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      transition: all 0.2s;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .update-item:hover {
+      border-color: var(--border);
+      background: var(--surface-alt);
+    }
+    .update-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .update-date {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      min-width: 85px;
+    }
+    .update-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .update-desc {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+    .update-badge {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 16px;
+    }
+    .cat-item {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 20px 12px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+    .cat-item:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+    /* 深度解析正文 */
+    .article-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+    .article-card h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .article-card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 28px 0 12px;
+      color: var(--text);
+    }
+    .article-card p {
+      font-size: 0.98rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      margin-bottom: 16px;
+    }
+    .article-card strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    /* FAQ */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+    .faq-item {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 22px 24px;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+    .faq-item:hover {
+      border-color: #c8d4e0;
+    }
+    .faq-q {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    .faq-a {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    /* 评论 */
+    .comment-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .comment-item {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 18px;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .comment-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-soft), #ffd8c0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+    .comment-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .comment-time {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+    .comment-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    /* 资讯 */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .news-card {
+      background: var(--surface);
+      border-radius: var(--radius-sm);
+      padding: 20px 22px;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+    .news-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-sm);
+    }
+    .news-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .news-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .news-summary {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    /* 页脚 */
+    .footer {
+      background: #1d2a38;
+      color: #b8c6d6;
+      padding: 48px 0 32px;
+      margin-top: 40px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 32px;
+    }
+    .footer h4 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+    .footer p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: #94a3b8;
+    }
+    .footer ul li {
+      margin-bottom: 10px;
+      font-size: 0.85rem;
+    }
+    .footer ul li a {
+      color: #94a3b8;
+      transition: color 0.2s;
+    }
+    .footer ul li a:hover {
+      color: var(--accent);
+    }
+    .footer-bottom {
+      border-top: 1px solid #2d3e4f;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.8rem;
+      color: #6b7c8e;
+    }
+    /* 响应式 */
+    @media (max-width: 900px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero {
+        padding: 32px 0 24px;
+      }
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+      .hero-search button {
+        padding: 0 20px;
+      }
+      .section {
+        padding: 36px 0;
+      }
+      .article-card {
+        padding: 24px;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .update-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+  <!-- 导航 -->
+  <header class="nav-wrap">
+    <div class="container nav-inner">
+      <div class="logo-area">
+        <div class="logo-icon">天</div>
+        <div class="logo-text">天堂<span>电影下载</span></div>
+      </div>
+      <nav class="nav-links">
+        <a href="/#hot-movies">热门推荐</a>
+        <a href="/#latest-update">最新更新</a>
+        <a href="/#category">分类索引</a>
+        <a href="/#deep-analysis">深度解析</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">资讯动态</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="/#subscribe" class="btn-ghost">订阅更新</a>
+        <a href="/#search" class="btn-primary">迅雷下载</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首屏 Banner -->
+  <section class="hero" id="search">
+    <div class="container hero-content">
+      <div class="hero-badge">🔥 2026年11月7日 持续更新中</div>
+      <h1>天堂电影下载 迅雷<br>高清资源磁力索引站</h1>
+      <p class="hero-desc">汇聚全网热门电影、经典影片与高分剧集的迅雷下载链接，每日同步更新磁力索引。按类型、年份、评分快速筛选，一键获取高清资源，告别繁琐搜索。</p>
+      <div class="hero-search">
+        <input type="text" placeholder="输入电影名称 / 演员 / 导演，搜索迅雷下载资源..." aria-label="搜索电影资源">
+        <button type="button">立即搜索</button>
+      </div>
+      <div class="hero-tags">
+        <a href="/#hot-movies">2026新片</a>
+        <a href="/#hot-movies">动作片</a>
+        <a href="/#hot-movies">科幻大片</a>
+        <a href="/#hot-movies">悬疑烧脑</a>
+        <a href="/#hot-movies">经典老片</a>
+        <a href="/#hot-movies">4K高清</a>
+        <a href="/#latest-update">今日更新</a>
+        <a href="/#category">按类型筛选</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容简介 / 平台介绍 -->
+  <section class="section" id="intro">
+    <div class="container">
+      <div class="article-card">
+        <h2>关于天堂电影下载 迅雷资源索引</h2>
+        <p><strong>天堂电影下载 迅雷</strong> 是一个专注于影视资源检索与下载引导的内容平台。我们理解每一位影迷在寻找高清电影时的痛点：资源分散、链接失效、画质参差不齐、下载速度慢。因此，本站以迅雷下载为核心场景，系统化整理了海量电影资源的磁力索引与下载入口，覆盖院线新片、经典修复、冷门佳作、高分剧集等多个维度。</p>
+        <p>无论你是追求4K HDR画质的影音发烧友，还是只想快速下载一部下饭电影的普通观众，都能在这里找到适合自己的资源。页面按照类型、年份、评分、热度等多维度分类，配合人工编辑精选与用户真实评价，帮助你降低筛选成本。同时，我们持续关注迅雷下载生态的变化，及时更新可用链接与下载提示，让每一次点击都更有价值。</p>
+        <p>值得收藏的理由很简单：<strong>天堂电影下载 迅雷</strong> 索引页不仅是资源入口，更是一份持续维护的观影指南。从热门推荐到深度解析，从常见问题到用户讨论，你可以在一个页面里完成从“想看”到“下载”的完整决策。移动端同样友好，通勤路上也能快速查找并保存资源。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门内容推荐 -->
+  <section class="section" id="hot-movies">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">热门电影推荐 <small>迅雷下载热度榜</small></h2>
+        <a href="/#hot-movies" class="section-more">查看全部 →</a>
+      </div>
+      <div class="card-grid">
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #1e2a3a 0%, #2f4560 100%);"><span class="badge">4K HDR</span></div>
+          <div class="card-body">
+            <div class="card-title">星际迷航：新纪元</div>
+            <div class="card-tags"><span>科幻</span><span>冒险</span><span>IMAX</span></div>
+            <div class="card-desc">重启系列第七部，探索未知星系边缘的神秘信号，视觉奇观与哲学思辨并重。</div>
+            <div class="card-meta"><span>2026-11-05</span><span class="hot">🔥 28.6k 下载</span></div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #3a1e2a 0%, #602f45 100%);"><span class="badge">1080P</span></div>
+          <div class="card-body">
+            <div class="card-title">暗夜追凶</div>
+            <div class="card-tags"><span>悬疑</span><span>犯罪</span><span>反转</span></div>
+            <div class="card-desc">一桩十年悬案重启调查，刑警与嫌疑人之间的心理博弈层层递进，结局意外。</div>
+            <div class="card-meta"><span>2026-11-04</span><span class="hot">🔥 21.3k 下载</span></div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #2a3a1e 0%, #45602f 100%);"><span class="badge">HDR</span></div>
+          <div class="card-body">
+            <div class="card-title">荒野生存指南</div>
+            <div class="card-tags"><span>剧情</span><span>冒险</span><span>治愈</span></div>
+            <div class="card-desc">都市白领误入无人区，在极端环境中重新审视生命意义，风光与人性交织。</div>
+            <div class="card-meta"><span>2026-11-03</span><span class="hot">🔥 15.8k 下载</span></div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #1e1a3a 0%, #2f2a60 100%);"><span class="badge">蓝光</span></div>
+          <div class="card-body">
+            <div class="card-title">时间褶皱</div>
+            <div class="card-tags"><span>科幻</span><span>悬疑</span><span>烧脑</span></div>
+            <div class="card-desc">时间循环题材新作，主角在无限循环中寻找破局点，细节伏笔密集。</div>
+            <div class="card-meta"><span>2026-11-02</span><span class="hot">🔥 32.1k 下载</span></div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #3a2a1e 0%, #60452f 100%);"><span class="badge">4K</span></div>
+          <div class="card-body">
+            <div class="card-title">江湖夜雨十年灯</div>
+            <div class="card-tags"><span>武侠</span><span>剧情</span><span>古装</span></div>
+            <div class="card-desc">传统武侠美学回归，恩怨情仇在雨夜中交织，动作设计干净利落。</div>
+            <div class="card-meta"><span>2026-11-01</span><span class="hot">🔥 12.4k 下载</span></div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #1e3a2a 0%, #2f6045 100%);"><span class="badge">1080P</span></div>
+          <div class="card-body">
+            <div class="card-title">深海回响</div>
+            <div class="card-tags"><span>灾难</span><span>剧情</span><span>催泪</span></div>
+            <div class="card-desc">深海科考队遭遇未知生物，封闭空间内的生存抉择与人性考验。</div>
+            <div class="card-meta"><span>2026-10-30</span><span class="hot">🔥 18.9k 下载</span></div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #3a1e1e 0%, #602f2f 100%);"><span class="badge">4K</span></div>
+          <div class="card-body">
+            <div class="card-title">最后一张底片</div>
+            <div class="card-tags"><span>文艺</span><span>剧情</span><span>获奖</span></div>
+            <div class="card-desc">胶片时代最后的冲印师，在一张旧底片中发现了改变一生的秘密。</div>
+            <div class="card-meta"><span>2026-10-29</span><span class="hot">🔥 9.7k 下载</span></div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="card-poster" style="background: linear-gradient(135deg, #2a1e3a 0%, #452f60 100%);"><span class="badge">HDR</span></div>
+          <div class="card-body">
+            <div class="card-title">霓虹深渊</div>
+            <div class="card-tags"><span>赛博朋克</span><span>动作</span><span>视觉系</span></div>
+            <div class="card-desc">赛博朋克都市中的赏金猎人，在霓虹与阴影之间游走，动作场面炸裂。</div>
+            <div class="card-meta"><span>2026-10-28</span><span class="hot">🔥 25.2k 下载</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section class="section" id="latest-update" style="background: var(--surface-alt);">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">最新更新动态 <small>迅雷资源实时追踪</small></h2>
+        <a href="/#latest-update" class="section-more">刷新列表 →</a>
+      </div>
+      <div class="update-list">
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-07</span><span class="update-title">星际迷航：新纪元</span><span class="update-desc">4K HDR 迅雷链接已补档，支持高速通道</span></div>
+          <span class="update-badge">新增</span>
+        </div>
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-07</span><span class="update-title">暗夜追凶</span><span class="update-desc">1080P 中字磁力索引更新，修复失效链接</span></div>
+          <span class="update-badge">更新</span>
+        </div>
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-06</span><span class="update-title">时间褶皱</span><span class="update-desc">新增蓝光原盘版本，含导演评论音轨</span></div>
+          <span class="update-badge">新增</span>
+        </div>
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-06</span><span class="update-title">深海回响</span><span class="update-desc">WEB-DL 版本上线，体积更小画质优秀</span></div>
+          <span class="update-badge">更新</span>
+        </div>
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-05</span><span class="update-title">霓虹深渊</span><span class="update-desc">HDR10+ 版本发布，建议搭配高清播放器</span></div>
+          <span class="update-badge">新增</span>
+        </div>
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-05</span><span class="update-title">江湖夜雨十年灯</span><span class="update-desc">4K 修复版磁力链已更新，经典重制</span></div>
+          <span class="update-badge">更新</span>
+        </div>
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-04</span><span class="update-title">荒野生存指南</span><span class="update-desc">新增外挂字幕包，适配多语言观众</span></div>
+          <span class="update-badge">新增</span>
+        </div>
+        <div class="update-item">
+          <div class="update-left"><span class="update-date">2026-11-04</span><span class="update-title">最后一张底片</span><span class="update-desc">艺术院线版资源放出，含映后交流片段</span></div>
+          <span class="update-badge">更新</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="section" id="category">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">按类型快速筛选 <small>天堂电影下载 迅雷分类索引</small></h2>
+        <a href="/#category" class="section-more">全部类型 →</a>
+      </div>
+      <div class="cat-grid">
+        <a href="/#hot-movies" class="cat-item">动作冒险</a>
+        <a href="/#hot-movies" class="cat-item">科幻奇幻</a>
+        <a href="/#hot-movies" class="cat-item">悬疑犯罪</a>
+        <a href="/#hot-movies" class="cat-item">剧情文艺</a>
+        <a href="/#hot-movies" class="cat-item">喜剧家庭</a>
+        <a href="/#hot-movies" class="cat-item">恐怖惊悚</a>
+        <a href="/#hot-movies" class="cat-item">爱情片</a>
+        <a href="/#hot-movies" class="cat-item">纪录片</a>
+        <a href="/#hot-movies" class="cat-item">动画电影</a>
+        <a href="/#hot-movies" class="cat-item">经典老片</a>
+        <a href="/#hot-movies" class="cat-item">4K高清专区</a>
+        <a href="/#hot-movies" class="cat-item">冷门佳作</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析正文 -->
+  <section class="section" id="deep-analysis">
+    <div class="container">
+      <div class="article-card">
+        <h2>深度解析：为什么“天堂电影下载 迅雷”仍是影迷首选</h2>
+        <p>在流媒体平台高度发达的今天，为什么还有大量用户坚持搜索<strong>天堂电影下载 迅雷</strong>？答案并不复杂：迅雷下载提供了流媒体无法替代的本地化体验——离线播放、不受网络波动影响、可以自由选择画质与字幕、方便收藏与重复观看。尤其对于影音发烧友而言，一部4K HDR电影的文件体积动辄数十GB，在线播放很难保证稳定码率，而迅雷下载则能充分发挥本地硬件与网络的优势。</p>
+        <h3>资源丰富度与索引质量</h3>
+        <p><strong>天堂电影下载 迅雷</strong> 索引的核心价值在于“整理”。互联网上的磁力链接和种子文件分散在各个论坛、网盘和TG群组中，质量参差不齐。本站通过持续维护和人工审核，筛选出可用性高、画质标注准确的资源，并按电影类型、上映年份、评分等维度结构化呈现。用户不需要在多个网站之间来回跳转，在一个页面内就能完成搜索、筛选和下载。</p>
+        <h3>画质分级与下载选择</h3>
+        <p>对于同一部电影，本站通常会提供多种画质选项：从适合移动端观看的720P压缩版，到平衡画质与体积的1080P WEB-DL，再到追求极致体验的4K HDR蓝光原盘。每个资源都标注了来源格式（如 WEB-DL、BluRay、HDTV）、音频规格和字幕信息，方便用户根据自己的设备和存储空间做出选择。这种细致程度是普通下载站难以做到的。</p>
+        <h3>适用人群与使用场景</h3>
+        <p>经常出差或居住在网络不稳定地区的用户，可以通过迅雷下载提前缓存影片，在旅途中安心观看；家庭影院用户则倾向于下载高码率版本，配合大屏电视和音响系统获得影院级体验；还有一部分用户出于收藏目的，会寻找经典老片的修复版资源。无论你的需求属于哪一种，<strong>天堂电影下载 迅雷</strong> 索引页都提供了清晰的入口。</p>
+        <h3>需要注意的使用事项</h3>
+        <p>迅雷下载的体验与网络环境、资源热度密切相关。冷门资源可能因做种人数少而速度较慢，建议优先选择标注“热门”或“高速通道”的链接。此外，下载前请确认设备安全软件已开启，并尽量从本站提供的索引页进入，避免点击来路不明的第三方链接。我们也会在每一条资源旁标注更新时间，帮助你判断链接的时效性。</p>
+        <p>总而言之，<strong>天堂电影下载 迅雷</strong> 并不是简单堆砌链接的页面，而是一套围绕观影需求构建的资源导航体系。从类型筛选到画质选择，从更新追踪到常见问题解答，我们希望让“找电影”这件事变得高效而可靠。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="background: var(--surface-alt);">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">常见问题 <small>关于迅雷下载与资源使用</small></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-q">Q：天堂电影下载的迅雷链接失效了怎么办？</div>
+          <div class="faq-a">A：部分老片或冷门资源的链接可能因时间原因失效。建议优先选择标注“近期更新”或“高速通道”的资源，并在评论区反馈失效链接。我们会在24小时内核查并补充可用磁力索引。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Q：4K和1080P版本应该怎么选？</div>
+          <div class="faq-a">A：主要取决于你的播放设备和存储空间。4K HDR版本画质最佳但文件体积大，适合大屏电视或投影仪；1080P版本在手机、平板和普通显示器上已经足够清晰，下载更快、更省空间。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Q：下载速度慢是什么原因？</div>
+          <div class="faq-a">A：迅雷下载速度受资源热度、做种人数、网络运营商和本地网络环境影响。热门新片通常速度较快；冷门资源建议尝试多个磁力链接，或开启迅雷的高速通道/离线下载功能。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Q：本站资源是否包含中文字幕？</div>
+          <div class="faq-a">A：大部分资源标注了字幕信息，常见的有内嵌中字、外挂中字和纯英文字幕三种。下载前请留意卡片上的标签说明，外挂字幕包通常会在资源详情中单独提供下载入口。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Q：如何第一时间获取最新电影资源？</div>
+          <div class="faq-a">A：建议关注页面顶部的“最新更新”板块，或订阅我们的更新通知。院线新片通常在上映后30-90天出现高清资源，我们会持续追踪并在资源可用时第一时间更新索引。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Q：经典老片有修复版资源吗？</div>
+          <div class="faq-a">A：有的。本站设有“经典老片”和“4K修复”分类，收录了大量经过数字修复的经典电影。修复版通常在画质、色彩和音轨上有明显提升，适合收藏和重温。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评论 -->
+  <section class="section" id="comments">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">用户评论 <small>真实下载体验分享</small></h2>
+      </div>
+      <div class="comment-list">
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">影</div><div class="comment-name">光影流年</div><div class="comment-time">2小时前</div></div>
+          <div class="comment-text">星际迷航的4K版迅雷速度很快，10分钟就下完了，画质确实震撼。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">追</div><div class="comment-name">追剧小能手</div><div class="comment-time">5小时前</div></div>
+          <div class="comment-text">暗夜追凶的1080P资源很清晰，字幕也对得上，推荐。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">深</div><div class="comment-name">深海鱼</div><div class="comment-time">8小时前</div></div>
+          <div class="comment-text">时间褶皱的链接好像有点慢，做种的人不多，希望补个源。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">赛</div><div class="comment-name">赛博老猫</div><div class="comment-time">12小时前</div></div>
+          <div class="comment-text">霓虹深渊的HDR版本在电视上放效果绝了，感谢整理。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">江</div><div class="comment-name">江湖再见</div><div class="comment-time">1天前</div></div>
+          <div class="comment-text">武侠片还是老味道好，江湖夜雨十年灯值得下载收藏。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">旅</div><div class="comment-name">旅行的意义</div><div class="comment-time">1天前</div></div>
+          <div class="comment-text">荒野生存指南适合周末窝在家里看，风景很美。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">底</div><div class="comment-name">底片时光</div><div class="comment-time">2天前</div></div>
+          <div class="comment-text">最后一张底片资源找了很久，这里居然有，感谢站长。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">深</div><div class="comment-name">深蓝</div><div class="comment-time">2天前</div></div>
+          <div class="comment-text">深海回响的WEB-DL版本体积小画质好，适合手机看。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">星</div><div class="comment-name">星尘</div><div class="comment-time">3天前</div></div>
+          <div class="comment-text">希望多更新一些经典老片的修复版，比如90年代的港片。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">夜</div><div class="comment-name">夜行者</div><div class="comment-time">3天前</div></div>
+          <div class="comment-text">迅雷下载确实方便，但有些链接需要会员加速，希望能标注清楚。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">时</div><div class="comment-name">时间旅人</div><div class="comment-time">4天前</div></div>
+          <div class="comment-text">时间褶皱的剧情有点烧脑，下载后看了两遍才理清线索。</div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-header"><div class="avatar">迷</div><div class="comment-name">迷影者</div><div class="comment-time">5天前</div></div>
+          <div class="comment-text">分类做得很清晰，找科幻片直接点标签就行，省事。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section class="section" id="news" style="background: var(--surface-alt);">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">相关资讯 <small>影视下载动态与资源观察</small></h2>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-date">2026-11-07</div>
+          <div class="news-title">2026年第四季度高清电影资源趋势观察</div>
+          <div class="news-summary">4K HDR资源占比持续提升，迅雷下载仍然是高码率影视内容的主要获取方式之一，用户对画质和字幕的要求明显提高。</div>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-05</div>
+          <div class="news-title">迅雷下载链接可用性维护公告</div>
+          <div class="news-summary">本站近期对热门电影的磁力索引进行了系统性核查，修复了部分失效链接，并新增高速通道标注。</div>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-03</div>
+          <div class="news-title">经典电影4K修复版集中上线</div>
+          <div class="news-summary">多部90年代经典影片完成数字修复，画质提升明显，已在经典老片分类中更新下载索引。</div>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-01</div>
+          <div class="news-title">科幻题材电影下载热度持续走高</div>
+          <div class="news-summary">星际迷航、时间褶皱等科幻新片进入热门榜前列，用户对高画质科幻资源的需求增长显著。</div>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-10-30</div>
+          <div class="news-title">移动端下载体验优化提示</div>
+          <div class="news-summary">针对手机用户，本站优化了页面加载速度与卡片布局，迅雷下载入口在移动端同样清晰易用。</div>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-10-28</div>
+          <div class="news-title">冷门佳片资源合集更新</div>
+          <div class="news-summary">新增十余部冷门高分电影索引，涵盖欧洲文艺片、亚洲独立电影和纪录片，适合喜欢探索的影迷。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 订阅引导 -->
+  <section class="section" id="subscribe" style="padding-bottom: 20px;">
+    <div class="container">
+      <div class="article-card" style="text-align: center; background: linear-gradient(135deg, #fff5ef, #ffffff); border-color: #ffd8c0;">
+        <h2 style="margin-bottom: 12px;">订阅天堂电影下载 迅雷更新通知</h2>
+        <p style="max-width: 500px; margin: 0 auto 24px;">不再错过任何一部热门电影的高清资源。订阅后，新片上线、链接补档、修复版发布都会第一时间通知你。</p>
+        <div style="display: flex; max-width: 440px; margin: 0 auto; gap: 10px; flex-wrap: wrap; justify-content: center;">
+          <input type="email" placeholder="输入邮箱地址" style="flex: 1; min-width: 200px; padding: 12px 20px; border-radius: 40px; border: 1px solid var(--border); outline: none; font-family: var(--font);">
+          <button class="btn-primary" style="padding: 12px 28px; border: none; cursor: pointer;">订阅更新</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>天堂电影下载 迅雷</h4>
+          <p>专注影视资源索引与迅雷下载导航，每日更新热门电影、经典修复、高分剧集资源。让找电影变得更简单。</p>
+        </div>
+        <div>
+          <h4>快速导航</h4>
+          <ul>
+            <li><a href="/#hot-movies">热门推荐</a></li>
+            <li><a href="/#latest-update">最新更新</a></li>
+            <li><a href="/#category">分类索引</a></li>
+            <li><a href="/#deep-analysis">深度解析</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>帮助中心</h4>
+          <ul>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">资讯动态</a></li>
+            <li><a href="/#subscribe">订阅更新</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>友情链接</h4>
+          <ul>
+            <li><a href="#">影视资源站</a></li>
+            <li><a href="#">高清电影论坛</a></li>
+            <li><a href="#">磁力索引站</a></li>
+            <li><a href="#">BT下载社区</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 天堂电影下载 迅雷资源索引站. 本站仅提供资源索引与导航服务，不存储任何影视文件。</span>
+        <span>免责声明：请用户遵守当地版权法规，下载内容仅限个人学习与交流使用。</span>
+      </div>
+    </div>
+  </footer>
+</body>
+                                          </html>
